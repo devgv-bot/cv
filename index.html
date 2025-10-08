@@ -86,6 +86,13 @@
 		padding-bottom: 5px; 
 		margin-top: 30px; 
 	}
+	
+	h3 { 
+		color: #afc5db; 
+		border-bottom: 2px solid #ddd; 
+		padding-bottom: 5px; 
+		margin-top: 30px;  
+	}
   
 	.section { 
 		display: none; 
@@ -112,6 +119,10 @@
 	.card:hover { 
 		transform: translateY(-5px); 
 		box-shadow: 0 8px 20px rgba(0,0,0,0.15); 
+	}
+	
+	#contacto {
+		text-align: center;
 	}
   
   /* Panel de edición WYSIWYG */
@@ -205,7 +216,7 @@
 <button class="toggle-btn" onclick="toggleSidebar()"><i class="fa-solid fa-bars"></i></button>
 
 <div class="sidebar">
-	  <h2>Mi CV</h2>
+	  <h3 class="cv">Mi CV</h3>
 	  <button onclick="mostrarSeccion('perfil')"><i class="fa-solid fa-user"></i> Perfil</button>
 	  <button onclick="mostrarSeccion('experiencia')"><i class="fa-solid fa-briefcase"></i> Experiencia</button>
 	  <button onclick="mostrarSeccion('educacion')"><i class="fa-solid fa-graduation-cap"></i> Educación</button>
@@ -216,7 +227,9 @@
 
 <div class="main">
 	<h1 id="nombre">Jordan Granados Vargas</h1>
-	<p id="contacto"><strong>Email:</strong> jordan-gv@hotmail.com | <strong>Tel:</strong> +506 8784-8328 | <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jordan-granados-b3b559142">jordan-granados</a></p>
+	<p id="contacto">Soporte TI | Técnico en Infraestructura | Gestión de Infraestructura y Atención a Usuarios
+	
+	<br><br>📧 jordan-gv@hotmail.com | 🌐 <a href="https://www.linkedin.com/in/jordan-granados-b3b559142">www.linkedin.com/jordan-granados</a> | 📍 San José, Costa Rica | 📞 +506 8784-8328</p>
 
   <div id="perfil" class="section active">
     <h2>Perfil Profesional</h2>
@@ -386,7 +399,7 @@
 		<h2>Habilidades</h2>
 		<div id="habilidades-text">
 			<div class="card">
-				Habilidades blandas
+				Habilidades Blandas
 				<br><br>• Pensamiento analítico y orientación a la solución de problemas.
 				<br><br>• Proactividad, responsabilidad y compromiso con resultados.
 				<br><br>• Comunicación efectiva y trabajo colaborativo.
